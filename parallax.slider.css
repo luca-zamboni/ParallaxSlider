@@ -1,8 +1,4 @@
 
-.parallax-slider{
-	background-size: cover;
-}
-
 .parallax-slider img{
 	display:none;
 }
@@ -14,4 +10,19 @@
 	left: 0px;
 	right: 0px;
 	position: absolute;
+	background-size: cover;
+	background-position:center center;
+	background-attachment: fixed;
+}
+
+.parallax-slider .description{
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	color: #fff;
+	font-size: 20px;
+	background-color: rgba(0,0,0,0.5);
+	padding: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
