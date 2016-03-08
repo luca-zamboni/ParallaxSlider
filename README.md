@@ -13,19 +13,19 @@ Call the script on class ".parallax-slider"
 
 ```html
     <script type="text/javascript">
-	$( document ).ready(function() {
-		$(".parallax-slider").parallaxSlider({
-			// Optional parameter
-            // Default:
-            // speedSlide : 5000
-            // speedParallax : 0.5
-            // description : true
-            speedSlide : 5000,
-            speedParallax : 0.50,
-            description : true
-		});
-	});
-</script><br>
+    	$( document ).ready(function() {
+    		$(".parallax-slider").parallaxSlider({
+    			// Optional parameter
+                // Default:
+                // speedSlide : 5000
+                // speedParallax : 0.5
+                // description : true
+                speedSlide : 5000,
+                speedParallax : 0.50,
+                description : true
+    		});
+    	});
+    </script><br>
 ```
 
 Include your parallax slider in a contanier
