@@ -1,6 +1,7 @@
 
 body{
 	margin: 0;
+	font-family: "verdana";
 }
 
 .container-slider{
@@ -13,4 +14,3 @@ body{
 .text{
 	padding: 20px;
 }
-

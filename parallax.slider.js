@@ -54,7 +54,8 @@
 
         var settings = $.extend({
             speedParallax        : 0.15,
-            speedSlide           : 5000
+            speedSlide           : 5000,
+            description          : true
         }, options);
 
         var slider1 = $(this);
@@ -75,8 +76,12 @@
 
 
         slider1.css({backgroundImage:"url("+images[0]+")"});
-        $('.slider-description').html(desc[0]);
 
+        if(!settings.description){
+            $('.slider-description').css({display:"none"});
+        }
+
+        $('.slider-description').html(desc[0]);
 
         var max = images.length;
         var i = 0;
@@ -91,7 +96,9 @@
             }
 
             cs.css({backgroundImage:"url("+images[i%max]+")"});
-            $('.slider-description').html(desc[i%max]);
+            if(settings.description){
+                $('.slider-description').html(desc[i%max]);
+            }
 
             cs.fadeIn(1000);
             ncs.fadeOut(1000);
