@@ -11,10 +11,10 @@
         var view = 1;
         if($(window).width() < 990){
             view = -1;
-            this.css('background-attachment', 'scroll');
+            //this.css('background-attachment', 'scroll');
         } else {
             view = 1;
-            this.css('background-attachment', 'fixed');
+            //this.css('background-attachment', 'fixed');
         }
 
         return this.each( function() {
@@ -35,11 +35,11 @@
 
                 if($(window).width() < 990){
                     view = -1;
-                    $this.css('background-attachment', 'scroll');
+                    //$this.css('background-attachment', 'scroll');
                 } else {
                     view = 1;
-                    $this.css('background-attachment', 'fixed');
-                    var yBgPosition = view * Math.round((offset - scrollTop) * settings.speedParallax);
+                    //$this.css('background-attachment', 'fixed');
+                    var yBgPosition = - view * Math.round((offset - scrollTop) * settings.speedParallax);
                     //console.log(this + yBgPosition);
                     $this.css('background-position', 'center ' + yBgPosition + 'px');
                 }
