@@ -33,8 +33,8 @@ Include your parallax slider in a contanier
 ```html
     <div class="container-slider">
 		<div class="parallax-slider">
-			<img src="img/img1.jpg">
-			<img src="img/img2.jpg">
+			<img src="img/img1.jpg" alt="First description">
+			<img src="img/img2.jpg" alt="Second description">
 		</div>
 	</div>
 ```
